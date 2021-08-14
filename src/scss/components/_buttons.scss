@@ -1,0 +1,60 @@
+.btn {
+  border: 0;
+  cursor: pointer;
+  font-size: rem(12);
+  letter-spacing: 1px;
+
+
+  &:hover {
+    color: $color-white;
+  }
+
+  .icon {
+    margin-left: 20px;
+    &::before {
+      color: $color-white;
+    }
+  }
+}
+
+.utl-btn-primary {
+  background: $primary-color;
+  color: $color-white;
+}
+
+.utl-btn-secondary {
+  background-color: $secondary-color;
+  color: $color-white;
+  border: 0;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+}
+
+.utl-btn-outline-primary {
+  color: #02133c;
+  font-family: $font-regular;
+
+
+  &:hover {
+    background-color: $primary-color;
+    color: $color-white;
+  }
+
+  .icon {
+    &::before {
+      color: inherit;
+    }
+  }
+}
+
+.utl-btn-outline-white {
+  color: $color-white;
+  border: 1px solid $color-white;
+}
+
+.utl-btn-bg-white {
+  background-color: $color-white;
+  border: 1px solid $color-white;
+}

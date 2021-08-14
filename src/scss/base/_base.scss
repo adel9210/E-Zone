@@ -1,0 +1,23 @@
+html,
+body {
+  direction: #{$direction};
+  text-align: #{$left};
+  box-sizing: border-box;
+  font-family: $font-regular;
+  color: $color-dark;
+  font-size: 14px !important;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+
+  & > * {
+    line-height: 24px!important;
+    font-size: inherit;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

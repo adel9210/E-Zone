@@ -1,0 +1,78 @@
+.footer {
+  background-image: url(../img/footer-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 80px 0;
+  // margin-top: 600px; // test
+  color: $color-white;
+
+  &__main-title {
+    font-size: 16px;
+    font-family: $font-bold;
+    margin-bottom: 20px;
+  }
+
+  &__info {
+    margin-#{$left}: 40px;
+
+    & > [class^="heading"] {
+      color: $color-white;
+      margin-bottom: 20px;
+    }
+
+    .heading-3 {
+      color: $color-grey;
+    }
+  }
+
+  &__list {
+    &__item {
+      margin-bottom: 20px;
+
+      &__link {
+        color: $color-white;
+      }
+
+      &:first-of-type{
+        font-size: rem(16);
+        font-family: $font-bold;  
+      }
+    }
+
+  }
+
+  &__site-map {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+
+    &__item {
+      margin-#{$right}: 15px;
+
+      &__link {
+      color: $color-white;
+
+      }
+    }
+    
+  }
+
+  &__copy-rights {
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 2px dashed $primary-color;
+    text-align: center;
+    color: $color-white;
+    text-align: center;
+  }
+
+  @include media-breakpoint-down(md) {
+    &__logo {
+      height: 150px;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 0;
+  }
+}
