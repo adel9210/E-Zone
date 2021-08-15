@@ -3,8 +3,10 @@
   background-repeat: no-repeat;
   background-size: cover;
   padding: 80px 0;
+  padding-bottom: 0;
   // margin-top: 600px; // test
-  color: $color-white;
+  color: #4b4b4b;
+
 
   &__main-title {
     font-size: 16px;
@@ -21,7 +23,7 @@
     }
 
     .heading-3 {
-      color: $color-grey;
+      color: #4b4b4b;
     }
   }
 
@@ -30,39 +32,38 @@
       margin-bottom: 20px;
 
       &__link {
-        color: $color-white;
+        color: #4b4b4b;
+        font-size: rem(14);
+        font-family: $font-bold;
       }
 
       &:first-of-type{
         font-size: rem(16);
         font-family: $font-bold;  
       }
-    }
 
-  }
+      &__contact {
+        display: flex;
+        align-items: flex-start;
 
-  &__site-map {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-
-    &__item {
-      margin-#{$right}: 15px;
-
-      &__link {
-      color: $color-white;
-
+        .icon {
+          margin-inline-end: 5px;
+          margin-top: 5px;
+        }
       }
     }
-    
+
   }
 
-  &__copy-rights {
-    padding-top: 20px;
-    margin-top: 20px;
-    border-top: 2px dashed $primary-color;
-    text-align: center;
-    color: $color-white;
+  .social-links {
+    .icon {
+      color: $primary-color;
+    }
+  }
+
+  &__copyright {
+    padding: 20px;
+    background-color: $color-dark;
     text-align: center;
   }
 
