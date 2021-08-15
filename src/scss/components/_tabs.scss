@@ -1,26 +1,29 @@
 .utl-tabs {
     &__items {
       border-bottom: 1px solid #E3E3E3;
-      background-color: #F4F8F6;
+      // background-color: #F4F8F6;
       justify-content: center;
       margin-bottom: 30px;
       margin-top: 40px;
     }
 
     &__item {
+      margin-inline-end: 30px;
+
       &__link {
+        border-bottom: 1px solid transparent;
         font-size: rem(14);
         font-family: $font-bold;
-        color: $color-grey;
+        color: $color-dark;
+        width: 100%;
+        display: block;
 
         &.active {
-          padding: 10px 30px;
-          background-color: $primary-color;
-          color: $color-white;
-          border-radius: 6px 6px 0px 0px;
+          border-color: #4187d4;
         }
-        &:hover {
-          color: $color-dark;
+
+        &:hover, &:focus, &:visited, &:active, &:focus-visible {
+             border-bottom: 1px solid #4187d4!important;
         }
       }
 

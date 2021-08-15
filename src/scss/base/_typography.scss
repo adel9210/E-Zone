@@ -26,7 +26,7 @@
 }
 
 .heading-3-bold {
-    font-size: rem(18);
+    font-size: rem(36);
     color: $color-dark; 
     font-family: $font-bold;
     margin-bottom: 20px;
@@ -79,6 +79,20 @@
     font-size: rem(34);
     font-family: $font-bold;
     line-height: 60px;
+}
+
+.section-title {
+    color: #4b4b4b;
+    font-size: rem(16);
+    font-weight: bold;
+    letter-spacing: 3.33px;
+    margin-bottom: 36px;
+    
+    &::before {
+        content: "";
+        margin-right: 10px;
+       @include addIcon($icon-calender, 12px)
+   }
 }
 
 

@@ -5,8 +5,8 @@
   "abstracts/custom";
 
 // BASE
-@import "base/rest", "base/base", "base/fonts", "base/typography", "base/rest",
-  "base/icon/style.scss";
+@import "base/rest", "base/base", "base/fonts", "base/rest",
+  "base/icon/style.scss",  "base/typography";
 
 @import "abstracts/helpers";
 
@@ -14,7 +14,7 @@
 @import "components/carousel", "components/social-links", "components/scroll",
   "components/dropdown", "components/spinner", "components/mobile-menu",
   "components/form", "components/breadcrumb", "components/pagination",
-  "components/card", "components/buttons", "components/tabs", "components/modal", "components/comment", "components/CEO-word.scss";
+  "components/card", "components/buttons", "components/tabs", "components/modal", "components/comment", "components/CEO-word.scss", "components/service", "components/play-icon";
 
 // PAGES
 @import "pages/home";

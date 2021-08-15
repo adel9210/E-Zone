@@ -49,9 +49,20 @@
   }
 }
 
-.utl-btn-outline-white {
-  color: $color-white;
-  border: 1px solid $color-white;
+.utl-btn-outline {
+  color: $primary-color;
+  border: 1px solid $primary-color;
+
+  &:hover {
+    color: currentColor;
+  }
+  
+  .icon {
+    margin-left: 20px;
+    &::before {
+      color: $primary-color;
+    }
+  }
 }
 
 .utl-btn-bg-white {

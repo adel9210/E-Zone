@@ -1,29 +1,39 @@
 jQuery(document).ready(function ($) {
-  const versionSliders = new Swiper(".version__slider", {
-    slidesPerView: 4,
+
+
+  const courses__swiper = new Swiper(".courses__swiper", {
+    slidesPerView: 3,
     spaceBetween: 10,
-    pagination: {
-      el: ".version .swiper-pagination",
-      clickable: true,
+    observer: true,
+    observeParents: true,
+    navigation: {
+      nextEl: ".courses__cards .swiper-button-next",
+      prevEl: ".courses__cards .swiper-button-prev",
     },
+
     breakpoints: {
       // when window width is >= 320px
       320: {
-        slidesPerView: 2,
+        slidesPerView: 1,
         spaceBetween: 20,
       },
       // when window width is >= 480px
       480: {
-        slidesPerView: 4,
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // when window width is >= 768px
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // when window width is >= 991px
+      991: {
+        slidesPerView: 3,
         spaceBetween: 20,
       },
     },
-    on: {
-      init: function () {},
-      resize: function () {},
-    },
   });
-
 
   // REMOVE SPINNER
   setTimeout(() => {
@@ -132,7 +142,9 @@ function changeEventContainerPosition() {
 function scrollFunction(topButton, headerNav) {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "flex";
-    headerNav.style.top = "0px";
+    if (headerNav) {
+      headerNav.style.top = "0px";
+    }
   } else {
     topButton.style.display = "none";
     // headerNav.style.top = '60px';
@@ -180,11 +192,11 @@ function mobileNavMenuRender() {
   const openMenuBtn = document.getElementById("openMenu");
   const closeMenuBtn = document.getElementById("closeMenu");
 
-  openMenuBtn.addEventListener("click", function () {
-    $(".header__mobile").fadeIn("slow");
-  });
+  // openMenuBtn.addEventListener("click", function () {
+  //   $(".header__mobile").fadeIn("slow");
+  // });
 
-  closeMenuBtn.addEventListener("click", function () {
-    $(".header__mobile").fadeOut("slow");
-  });
+  // closeMenuBtn.addEventListener("click", function () {
+  //   $(".header__mobile").fadeOut("slow");
+  // });
 }

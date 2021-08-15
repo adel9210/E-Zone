@@ -20,7 +20,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 105%;
+  width: 109%;
   display: flex;
   align-items: center;
   z-index: 99;
@@ -29,15 +29,25 @@
   .swiper-button-prev {
     width: 45px;
     height: 45px;
-    border-radius: 50%;
-    background-color: $color-white;
+    // border-radius: 50%;
+    border: 1px solid $primary-color;
+    // background-color: $color-white;
     box-shadow: $main-box-shadow;
+    transition: all .2s ease-in-out;
     cursor: pointer;
     opacity: 1;
 
     &::after {
       font-size: rem(18);
       color: $primary-color;
+    }
+
+    &:hover {
+      background-color: $primary-color;
+
+        &::after {
+          color: $color-white;
+        }
     }
   }
 
