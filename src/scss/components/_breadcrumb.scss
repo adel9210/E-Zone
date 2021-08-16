@@ -1,13 +1,13 @@
 .breadcrumb-container {
-  // height: 56px;
   padding: 10px 0;
-  // background-color: $color-light-grey-3;
   display: flex;
   align-items: center;
-  margin-bottom: 40px;
+  margin-top: 60px;
+
   @include media-breakpoint-down(lg) {
     margin-top: 85px;
   }
+
   .breadcrumb {
     border-radius: 0;
     background: none;
@@ -23,20 +23,19 @@
         position: relative;
 
         &::after {
-          @if $direction == rtl {
-            @include addIcon($icon-left-arrow, 10px);
-          } @else {
-            @include addIcon($icon-right-arrow, 10px);
-          }
-
-          #{$right}: -18px;
-          top: 8px;
+         content: "/";
+          #{$right}: -22px;
           color: #a0a1a2;
           position: absolute;
+          font-size: rem(36);
+          @include media-breakpoint-down(md) {
+            font-size: rem(25);
+          }
         }
 
         .breadcrumb__link {
           transition: $transition-type;
+          color: #4187d4;
 
           &:hover {
             color: $primary-color !important;
@@ -50,14 +49,15 @@
     }
 
     &__link {
-      color: #a0a1a2;
-      font-size: rem(14);
+      color: #fff;
       text-decoration: none;
       display: flex;
       align-items: center;
+      font-size: rem(36);
+      font-family: $font-bold;
 
-      .icon {
-        margin-#{$right}: 7px;
+      @include media-breakpoint-down(md) {
+        font-size: rem(25);
       }
     }
 
@@ -73,32 +73,4 @@
     margin-top: 20px;
   }
 
-  &--with-header {
-    padding-bottom: 40px;
-    background-image: url(../img/breadcrumb.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    .breadcrumb__item:not(:last-child)::after {
-      color: #fff;
-    }
-
-    .breadcrumb {
-      .breadcrumb__item {
-        .breadcrumb__link {
-          color: $color-white;
-        }
-
-        &:not(:last-child) {
-          .breadcrumb__link {
-            color: $color-white;
-
-            &:hover {
-              color: #000 !important;
-            }
-          }
-        }
-      }
-    }
-  }
 }

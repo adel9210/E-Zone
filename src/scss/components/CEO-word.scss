@@ -36,4 +36,17 @@
             margin-top: 25px;
         }
     }
+
+    @include media-breakpoint-down(sm) {
+        flex-direction: column;
+        padding: 20px;
+        &__image {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+        &__info__author{
+            font-size: rem(22);
+        }
+      }
 }

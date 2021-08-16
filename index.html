@@ -23,7 +23,7 @@
       </div>
     </div>
     <!-- HEADER SECTION START -->
-    <header class="header">
+    <header class="header home">
       <div class="header__top-nav">
         <div class="container">
           <div class="row">
@@ -74,6 +74,109 @@
           </div>
         </div>
       </div>
+      <div class="header__mobile-nav">
+        <div class="
+        
+        header__mobile-nav__container
+        d-flex
+        align-items-center
+        justify-content-between
+      ">
+            <div class="d-flex align-items-center justify-content-between w-100">
+                <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+                    <i class="icon icon-menu"></i>
+                </a>
+                <a href="#" class="header__mobile-nav__logo">
+                    <img src="assets/img/logo.svg" alt="Logo" />
+                </a>
+            </div>
+  
+        </div>
+    </div>
+      <div class="header__mobile">
+        <nav class="nav-drill">
+            <a href="#" id="closeMenu">x</a>
+            <ul class="nav-items nav-level-1">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Home </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> About </a>
+                </li>
+        
+                <li class="nav-item nav-expand">
+                    <a class="nav-link nav-expand-link" href="#"> Services </a>
+                    <ul class="nav-items nav-expand-content">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"> Program Number One </a>
+                        </li>
+                        <li class="nav-item nav-expand">
+                            <a class="nav-link nav-expand-link" href="#">
+                                Program Number One
+                            </a>
+                            <ul class="nav-items nav-expand-content">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">External Link 1 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">External Link 2 </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">External Link 3 </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Clients </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Certifications </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> News </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"> Contact Us </a>
+                </li>
+
+                <a href="#" class="header__mobile__change-lang utl-down-arrow mt-5 mx-3" type="button"
+                    id="changeLang" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Change Language</a>
+                <div class="dropdown-menu" aria-labelledby="changeLang">
+                    <a class="dropdown-item" href="#">عربي</a>
+                    <a class="dropdown-item" href="#">English</a>
+                </div>
+                <ul class="social-links mt-5 mx-3">
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-instagram"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-links__item">
+                        <a href="#" class="social-links__item__link">
+                            <i class="icon icon-facebook"></i>
+                        </a>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+    </div>
 
       <div class="container">
         <nav class="header__nav">
@@ -1071,6 +1174,81 @@
         </div>
       </section>
       <!-- TESTIMONIALS SECTION END -->
+
+      <!-- INQUIRY SECTION START -->
+      <section class="inquiry">
+        <div class="container">
+          <div class="row inquiry__wrapper">
+            <div class="col-md-8">
+              <fomr class="inquiry__form">
+                <h2 class="text-center inquiry__title">Inquiry Now!</h2>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-input" placeholder="Name">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-input" placeholder="Eamil">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control form-input" placeholder="Phone">
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <select name="service" id="service" class="form-control form-input">
+                        <option value="0">Service1</option>
+                        <option value="0">Service1</option>
+                        <option value="0">Service1</option>
+                        <option value="0">Service1</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                    <textarea name="message" id="message" rows="7" class="form-control form-input" placeholder="Tell us about the needing service(s)"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="col-12 text-right">
+                    <button class="btn utl-btn-primary">Send Message</button>
+                  </div>
+                  
+                </div>
+              </form>
+            </div>
+            <div class="col-md-4 text-center">
+              <h3 class="inquiry__label">Maxime placeat facere possimus omnis </h3>
+              <h4 class="inquiry__count">17k</h4>
+              <h5 class="inquiry__value">customers served (and counting)</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- INQUIRY SECTION END -->
+
+      <!-- NEWS LETTER SECTION START -->
+      <section class="news-letter">
+        <div class="container">
+          <div class="news-letter__form">
+          <h2 class="section-title">Subscribe to our newsletter</h2>
+          <h2 class="news-letter__form__title">We’ll send you the best of our blog just
+            once a monthe. We promise.</h2>
+            <form action="" class="d-flex align-items-center news-letter__form__input">
+              <input type="text" class="form-control form-input" placeholder="Email">
+              <button class="btn utl-btn-primary">Subscribe</button>
+            </form>
+
+          </div>
+        </div>
+      </section>
+      <!-- NEWS LETTER SECTION START -->
+
+
     </main>
 
     <!-- FOOTER SECTION START -->

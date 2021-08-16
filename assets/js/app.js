@@ -236,7 +236,7 @@ function mobileNavMenuRender() {
   const navExpand = [].slice.call(document.querySelectorAll(".nav-expand"));
   const backLink = `<li class="nav-item">
 	<a class="nav-link nav-back-link" href="javascript:;">
-		رجوع
+		Back
 	</a>
 </li>`;
 
@@ -258,11 +258,11 @@ function mobileNavMenuRender() {
   const openMenuBtn = document.getElementById("openMenu");
   const closeMenuBtn = document.getElementById("closeMenu");
 
-  // openMenuBtn.addEventListener("click", function () {
-  //   $(".header__mobile").fadeIn("slow");
-  // });
+  openMenuBtn.addEventListener("click", function () {
+    $(".header__mobile").fadeIn("slow");
+  });
 
-  // closeMenuBtn.addEventListener("click", function () {
-  //   $(".header__mobile").fadeOut("slow");
-  // });
+  closeMenuBtn.addEventListener("click", function () {
+    $(".header__mobile").fadeOut("slow");
+  });
 }

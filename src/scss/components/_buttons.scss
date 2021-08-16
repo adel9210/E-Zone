@@ -20,6 +20,8 @@
 .utl-btn-primary {
   background: $primary-color;
   color: $color-white;
+  padding: 12px 60px;
+  line-height: 1.71;
 }
 
 .utl-btn-secondary {
@@ -54,7 +56,8 @@
   border: 1px solid $primary-color;
 
   &:hover {
-    color: currentColor;
+    background-color: $primary-color;
+    color: $color-white;
   }
   
   .icon {

@@ -1,114 +1,114 @@
 .heading-1 {
-    font-size: rem(46);
-    color: $color-white;
-    font-family: $font-bold;
-    line-height: 1.22;
+  font-size: rem(46);
+  color: $color-white;
+  font-family: $font-bold;
+  line-height: 1.22;
 }
 
 .heading-2 {
-    font-size: rem(36);
-    font-family: $font-regular;
-    line-height: 1.17;
-    color: $color-white;
-
+  font-size: rem(36);
+  font-family: $font-regular;
+  line-height: 1.17;
+  color: $color-white;
 }
 
 .heading-3 {
-    font-size: rem(14);
-    color: $color-dark; 
-    line-height: 24px; 
+  font-size: rem(14);
+  color: $color-dark;
+  line-height: 24px;
 }
 
 .heading-2-grey {
-    font-size: rem(18);
-    color: $color-grey; 
-    font-family: $font-bold;
+  font-size: rem(18);
+  color: $color-grey;
+  font-family: $font-bold;
 }
 
 .heading-3-bold {
-    font-size: rem(36);
-    color: $color-dark; 
-    font-family: $font-bold;
-    margin-bottom: 20px;
+  font-size: rem(36);
+  color: $color-dark;
+  font-family: $font-bold;
+  margin-bottom: 20px;
+  @include media-breakpoint-down(sm) {
+    font-size: rem(22);
+  }
 }
 
 .heading-3-grey {
-    font-size: rem(14);
-    color: $color-grey; 
+  font-size: rem(14);
+  color: $color-grey;
 }
 
 .heading-5 {
-    font-size: rem(16);
-    color: $primary-color;
+  font-size: rem(16);
+  color: $primary-color;
 }
 
 .heading-6 {
-    font-size: rem(14);
-    color: $primary-color;
+  font-size: rem(14);
+  color: $primary-color;
 }
 
 .heading-7 {
-    font-size: rem(14);
-    color: $primary-color;
-    font-family: $font-bold;
+  font-size: rem(14);
+  color: $primary-color;
+  font-family: $font-bold;
 }
 
 .heading-bold-1 {
-    font-size: rem(16);
-    font-family: $font-bold;
-    color: $primary-color;
+  font-size: rem(16);
+  font-family: $font-bold;
+  color: $primary-color;
 }
 .heading-bold-dark {
-    font-size: rem(16);
-    font-family: $font-bold;
+  font-size: rem(16);
+  font-family: $font-bold;
 }
 
 .heading-bold-2 {
-    font-size: rem(14);
-    font-family: $font-bold;
-    color: $color-dark;
+  font-size: rem(14);
+  font-family: $font-bold;
+  color: $color-dark;
 }
 
 .heading-bold-3 {
-    font-size: rem(14);
-    font-family: $font-bold;
-    color: $color-white;
+  font-size: rem(14);
+  font-family: $font-bold;
+  color: $color-white;
 }
 
 .heading-title {
-    font-size: rem(34);
-    font-family: $font-bold;
-    line-height: 60px;
+  font-size: rem(34);
+  font-family: $font-bold;
+  line-height: 60px;
 }
 
 .section-title {
-    color: #4b4b4b;
-    font-size: rem(16);
-    font-weight: bold;
-    letter-spacing: 3.33px;
-    margin-bottom: 36px;
-    
-    &::before {
-        content: "";
-        margin-right: 10px;
-       @include addIcon($icon-calender, 12px)
-   }
+  color: #4b4b4b;
+  font-size: rem(16);
+  font-weight: bold;
+  letter-spacing: 3.33px;
+  margin-bottom: 36px;
+
+  &::before {
+    content: "";
+    margin-right: 10px;
+    @include addIcon($icon-calender, 12px);
+  }
 }
 
-
-
-@include media-breakpoint-down(sm){
-    .heading-1 {
-        font-size: rem(25);
-        margin-bottom: 10px;
-    }
-
-    .heading-5 {
-        font-size: rem(12);
-    }
-
-    .heading-2 {
-        font-size: rem(20);
-        line-height: 30px;
-    }
+@include media-breakpoint-down(sm) {
+  .heading-1 {
+    font-size: rem(25);
+    margin-bottom: 10px;
   }
+
+  .heading-5 {
+    font-size: rem(12);
+  }
+
+  .heading-2 {
+    font-size: rem(20);
+    line-height: 30px;
+  }
+}

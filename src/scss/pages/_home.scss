@@ -6,6 +6,13 @@
   padding-bottom: 50px;
 }
 
+.CEO-word {
+  @include media-breakpoint-down(md) {
+    top: 0;
+    margin: 40px 0;
+  }
+}
+
 .video-gallery {
   height: 500px;
   width: 100%;
@@ -102,25 +109,16 @@
         font-size: rem(16);
         color: #f5f5f5;
       }
+
+      @include media-breakpoint-down(sm) {
+        justify-content: center;
+        margin-bottom: 40px;
+      }
     }
   }
-}
 
-.courses {
-  background-color: $color-white;
-  padding: 60px 20px;
-
-  &__card {
-    &__title {
-      font-size: rem(24);
-      font-family: $font-bold;
-      color: $color-dark;
-      margin: 10px 0;
-    }
-
-    &__description {
-      color: #4b4b4b;
-    }
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
   }
 }
 
@@ -160,9 +158,19 @@
       }
     }
 
-    &:nth-child(4n+1){
+    &:nth-child(4n + 1) {
       .client__card {
         border-top-left-radius: 20px;
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    & {
+      padding: 40px 0;
+
+      &__slogan {
+        width: 100%;
       }
     }
   }
@@ -171,7 +179,8 @@
 .testimonials {
   padding: 100px 0;
 
-  &__title, &__slogan {
+  &__title,
+  &__slogan {
     color: $color-dark;
   }
 
@@ -200,6 +209,104 @@
         width: 48px;
         height: 48px;
         margin-inline-end: 15px;
+      }
+    }
+  }
+}
+
+.inquiry {
+  padding: 130px 0;
+  background-color: #02133c;
+
+  &__wrapper {
+    align-items: center;
+  }
+
+  &__title {
+    font-family: $font-bold;
+    font-size: rem(42);
+    color: #02133c;
+    text-align: center;
+    margin-bottom: 48px;
+  }
+
+  &__form {
+    padding: 60px;
+    background-color: $color-white;
+    display: block;
+    width: 100%;
+  }
+
+  &__label {
+    font-size: rem(30);
+    color: #fff;
+    margin-bottom: 46px;
+    line-height: 1.2;
+  }
+
+  &__count {
+    font-size: rem(96);
+    color: #4187d4;
+    font-weight: bold;
+    font-family: $font-bold;
+    margin-bottom: 46px;
+  }
+
+  &__value {
+    font-size: rem(19);
+    color: #fff;
+    font-family: $font-bold;
+  }
+
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0;
+    &__form {
+      padding: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.news-letter {
+  padding: 60px;
+  background-color: #d48e41;
+
+  .section-title {
+    color: $color-white;
+  }
+
+  .btn {
+    height: 48px;
+  }
+
+  &__form {
+    &__title {
+      font-size: rem(36);
+      line-height: 1.17;
+      font-family: $font-bold;
+      margin-bottom: 40px;
+      color: $color-white;
+      width: 70%;
+    }
+  }
+
+  @include media-breakpoint-down(sm) {
+    & {
+      padding: 20px;
+
+      &__form {
+        &__title {
+          width: 100%;
+        }
+
+        &__input {
+          flex-direction: column;
+
+          .btn {
+            width: 100%;
+            margin-top: 15px;
+          }
+        }
       }
     }
   }
