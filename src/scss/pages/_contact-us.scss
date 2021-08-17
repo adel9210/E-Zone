@@ -1,0 +1,14 @@
+.contact-us {
+    &__title {
+        font-size: rem(24);
+        font-weight: bold;
+        color: $color-dark;
+        margin-bottom: 25px;
+    }
+
+    &__form {
+        @include media-breakpoint-down(sm){
+            margin-top: 40px;
+        }
+    }
+}

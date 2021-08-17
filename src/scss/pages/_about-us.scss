@@ -1,0 +1,57 @@
+.about-us {
+    &__title {
+        font-size: rem(28);
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: $color-dark;
+    }
+
+    &__info {
+        color: #4b4b4b;
+        font-size: rem(16);
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+
+    &__features {
+        color: $color-dark;
+
+        &__item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 30px;
+
+          .icon {
+            margin-right: 23px;
+            color: #4dcfe0;
+          }
+        }
+
+        h3 {
+          font-size: rem(14);
+        }
+      }
+      &__certificate {
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+
+          @include media-breakpoint-down(sm){
+              justify-content: center;
+          }
+
+          &__image {
+              width: 60px;
+              display: block;
+              margin-inline-start: 20px;
+
+              img {
+                  width: 100%;
+              }
+          }
+      }
+
+      & .CEO-word {
+          padding: 0;
+      }
+}

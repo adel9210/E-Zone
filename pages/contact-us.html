@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/swiper.min.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../assets/css/style-ltr.min.css" />
+    <title>E-Zone - Contact Us</title>
+  </head>
+
+  <body>
+    <button id="gotToTopButton" title="Go to top">
+      <i class="icon icon-down-arrow"></i>
+    </button>
+
+    <div class="loader">
+      <div class="loader__item">
+        <img src="../assets/img/logo.svg" alt="Logo" />
+        <div></div>
+      </div>
+    </div>
+    <!-- HEADER SECTION START -->
+    <header class="header">
+      <div class="header__top-nav">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="header__top-nav__contact">
+                <div class="header__top-nav__contact__item">
+                  <i class="icon icon-envelope"></i>
+                  <div class="header__top-nav__contact__item__info">
+                    <h3>Email Us</h3>
+                    <h3>info@engineeringzone.com.sa</h3>
+                  </div>
+                </div>
+                <div class="header__top-nav__contact__item">
+                  <i class="icon icon-envelope"></i>
+                  <div class="header__top-nav__contact__item__info">
+                    <h3>CONTACT US</h3>
+                    <h3>+966 13 8114749</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 header__top-nav__social-links">
+              <ul class="social-links">
+                <li class="social-links__item">
+                  <a href="#" class="social-links__item__link">
+                    <i class="icon icon-facebook"></i>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="#" class="social-links__item__link">
+                    <i class="icon icon-twitter"></i>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="#" class="social-links__item__link">
+                    <i class="icon icon-instagram"></i>
+                  </a>
+                </li>
+                <li class="social-links__item">
+                  <a href="#" class="social-links__item__link">
+                    <i class="icon icon-youtube"></i>
+                  </a>
+                </li>
+              </ul>
+              <span class="utl-separator"></span>
+              <a href="">عربي</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile-nav">
+        <div
+          class="
+            header__mobile-nav__container
+            d-flex
+            align-items-center
+            justify-content-between
+          "
+        >
+          <div class="d-flex align-items-center justify-content-between w-100">
+            <a href="#" class="header__mobile-nav__burger-menu" id="openMenu">
+              <i class="icon icon-menu"></i>
+            </a>
+            <a href="#" class="header__mobile-nav__logo">
+              <img src="../assets/img/logo.svg" alt="Logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__mobile">
+        <nav class="nav-drill">
+          <a href="#" id="closeMenu">x</a>
+          <ul class="nav-items nav-level-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> About </a>
+            </li>
+
+            <li class="nav-item nav-expand">
+              <a class="nav-link nav-expand-link" href="#"> Services </a>
+              <ul class="nav-items nav-expand-content">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> Program Number One </a>
+                </li>
+                <li class="nav-item nav-expand">
+                  <a class="nav-link nav-expand-link" href="#">
+                    Program Number One
+                  </a>
+                  <ul class="nav-items nav-expand-content">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">External Link 1 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">External Link 2 </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">External Link 3 </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Clients </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Certifications </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> News </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contact Us </a>
+            </li>
+
+            <a
+              href="#"
+              class="header__mobile__change-lang utl-down-arrow mt-5 mx-3"
+              type="button"
+              id="changeLang"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Change Language</a
+            >
+            <div class="dropdown-menu" aria-labelledby="changeLang">
+              <a class="dropdown-item" href="#">عربي</a>
+              <a class="dropdown-item" href="#">English</a>
+            </div>
+            <ul class="social-links mt-5 mx-3">
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-youtube"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-instagram"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-twitter"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-facebook"></i>
+                </a>
+              </li>
+            </ul>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <nav class="header__nav">
+          <ul class="header__nav__items">
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">
+                <img
+                  src="../assets/img/logo.svg"
+                  alt="Logo"
+                  class="header__nav__logo"
+                />
+                <!-- LOGO -->
+              </a>
+            </li>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">Home </a>
+            </li>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">About </a>
+            </li>
+            <li class="header__nav__item">
+              <a
+                href="#"
+                class="header__nav__item__link utl-down-arrow"
+                type="button"
+                id="program"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Services</a
+              >
+
+              <ul class="dropdown-menu" aria-labelledby="program">
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#">برنامج رقم 1</a>
+                  <ul class="dropdown-menu">
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                    <li><a tabindex="-1" href="#">برنامج فرعي رقم 1</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">Clients </a>
+            </li>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">Certifications </a>
+            </li>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">News </a>
+            </li>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">Gallery </a>
+            </li>
+            <li class="header__nav__item">
+              <a href="#" class="header__nav__item__link">Gallery </a>
+            </li>
+            <li class="header__nav__item">
+              <button class="btn utl-btn-secondary">Verification</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- BREADCRUMB SECTION START -->
+        <ul class="breadcrumb-container">
+          <div class="container">
+            <div class="breadcrumb">
+              <li class="breadcrumb__item">
+                <a class="breadcrumb__link" href="#">Contact Us</a>
+              </li>
+            </div>
+          </div>
+        </ul>
+        <!-- BREADCRUMB SECTION END -->
+      </div>
+    </header>
+    <!-- HEADER SECTION END -->
+
+    <main class="main">
+        <div class="container utl-section-wrapper">
+          <section class="contact-us">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="contact-us__title">Contact info</h2>
+                <ul class="footer__list">
+                  <li class="footer__list__item">
+                    <div class="footer__list__item__contact">
+                      <i class="icon icon-location1"></i>
+                      <p class="font-weight-400">
+                        Abu Bakkar Siddique Road Al Moosa Tower – 1st Floor, office
+                        No. 102. Dammam, Hai Al-Shoula, KSA
+                      </p>
+                    </div>
+                  </li>
+                  <li class="footer__list__item">
+                    <div class="footer__list__item__contact">
+                      <i class="icon icon-phone"></i>
+                      <p>+966 13 8114749</p>
+                    </div>
+                  </li>
+                  <li class="footer__list__item">
+                    <div class="footer__list__item__contact">
+                      <i class="icon icon-envelope"></i>
+                      <p>info@engineeringzone.com.sa</p>
+                    </div>
+                  </li>
+                </ul>
+                <img class="contact-us__map w-100" src="../assets/img/map.png" alt="Map">
+              </div>
+              <div class="col-md-6">
+                <form class="contact-us__form">
+                  <h2 class="contact-us__title">Send us a message</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-input" placeholder="Name">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-input" placeholder="Eamil">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <input type="text" class="form-control form-input" placeholder="Phone">
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <select name="service" id="service" class="form-control form-input">
+                          <option value="0">Service1</option>
+                          <option value="0">Service1</option>
+                          <option value="0">Service1</option>
+                          <option value="0">Service1</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="form-group">
+                      <textarea name="message" id="message" rows="7" class="form-control form-input" placeholder="Tell us about the needing service(s)"></textarea>
+                      </div>
+                    </div>
+  
+                    <div class="col-12 text-right">
+                      <button class="btn utl-btn-primary">Send Message</button>
+                    </div>
+                    
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+    </main>
+
+    <!-- FOOTER SECTION START -->
+    <footer class="footer">
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-md-3">
+            <a href="">
+              <img src="../assets/img/logo-full.svg" alt="Logo" />
+            </a>
+            <p class="my-3">
+              This is a blurb about the company sed do eiusmod tempor incididunt
+              ut labore et dolore ex magna aliqua.
+            </p>
+            <ul class="social-links">
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-facebook"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-twitter"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-instagram"></i>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__item__link">
+                  <i class="icon icon-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >EXPLORE LINKS</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3">Home</a>
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3">About </a>
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Services</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Clients</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Gallery</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >SITE MAP</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Contact Us</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Quotation Request
+                </a>
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Verification</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >Terms and Conditions</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-3">
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <a href="" class="footer__list__item__link heading-3"
+                  >CONTACT</a
+                >
+              </li>
+              <li class="footer__list__item">
+                <div class="footer__list__item__contact">
+                  <i class="icon icon-location1"></i>
+                  <p>
+                    Abu Bakkar Siddique Road Al Moosa Tower – 1st Floor, office
+                    No. 102. Dammam, Hai Al-Shoula, KSA
+                  </p>
+                </div>
+              </li>
+              <li class="footer__list__item">
+                <div class="footer__list__item__contact">
+                  <i class="icon icon-phone"></i>
+                  <p>+966 13 8114749</p>
+                </div>
+              </li>
+              <li class="footer__list__item">
+                <div class="footer__list__item__contact">
+                  <i class="icon icon-envelope"></i>
+                  <p>info@engineeringzone.com.sa</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <h2>Copyright © Engineering Zone. All Rights Reserved 2017-2018</h2>
+      </div>
+    </footer>
+    <!-- FOOTER SECTION END -->
+
+    <script src="../assets/js/jquery-3.4.1.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/swiper.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="/../assets/js/wow.min.js"></script>
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

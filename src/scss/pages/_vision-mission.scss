@@ -1,0 +1,17 @@
+.vision-mission {
+    &__title{
+        font-size: rem(20);
+        color: $color-dark;
+        margin-bottom: 40px;
+        font-weight: bold;
+    }
+
+    &__icon {
+        width: 60px;
+        margin-inline-end: 20px;
+
+        @include media-breakpoint-down(sm){
+            margin-bottom: 15px;
+        }
+    }
+}
