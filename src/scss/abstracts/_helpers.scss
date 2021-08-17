@@ -121,3 +121,15 @@
     -webkit-line-clamp: 4;
   }
 }
+
+.utl-section-wrapper {
+  padding: 60px;
+  background-color: #fff;
+  position: relative;
+  top: -100px;
+
+  @include media-breakpoint-down(lg){
+    top: 0;
+    padding: 20px;
+  }
+}

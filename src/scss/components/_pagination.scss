@@ -10,8 +10,6 @@
     padding: 0;
     width: 42px;
     height: 42px;
-    border-radius: 50% !important;
-    // background-color: $color-light-grey-3;
     border-color: $primary-color;
     display: flex;
     justify-content: center;
@@ -20,25 +18,30 @@
     color: $color-grey;
     transition: $transition-type;
 
+    &:hover,
     &.active {
-      color: #fff;
-    }
-
-    &:hover {
       color: $color-white;
+      background-color: $primary-color;
+      .icon-right-arrow {
+        &::before {
+          color: $color-white;
+        }
+      }
     }
 
     .icon-left-arrow {
       @if $direction == ltr {
-          transform: rotate(180deg);
+        // transform: rotate(180deg);
       }
     }
 
-    .icon-right-arrow {
+    &--prev {
+      .icon-right-arrow {
         @if $direction == ltr {
-            transform: rotate(180deg);
+          transform: rotate(180deg);
         }
       }
+    }
   }
 }
 

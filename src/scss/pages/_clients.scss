@@ -1,0 +1,15 @@
+.clients {
+  &__slide {
+    &__image {
+      height: 100px;
+    }
+  }
+
+  &__pagination {
+      .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          margin: 0 5px;
+      }
+  }
+}
