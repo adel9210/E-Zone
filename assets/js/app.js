@@ -139,6 +139,10 @@ jQuery(document).ready(function ($) {
     },
   });
 
+  $('#ServiceItem').on('click', function(){
+    $('#serviceSubMenu').fadeToggle()
+  })
+
   // REMOVE SPINNER
   setTimeout(() => {
     $(".loader").fadeOut("slow");
