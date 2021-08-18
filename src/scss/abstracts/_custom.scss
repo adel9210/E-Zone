@@ -42,9 +42,16 @@ $input-height: 48px;
 $card-border-width: 0;
 $card-border-color: transparent;
 
-.card {
-  // box-shadow: $main-box-shadow;
+// modal
+$modal-inner-padding: 4rem!default;
+$modal-backdrop-bg: rgba(0,0,0,.9)!default;
+.modal-open {
+  height: 100vh;
 }
+
+// Table
+$table-dark-bg: $color-dark!default;
+$table-border-color: #c1c7d0;
 
 // DROP DOWN
 $dropdown-spacer: 1rem;

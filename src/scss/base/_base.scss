@@ -26,3 +26,9 @@ html {
 h2 {
   line-height: 1.2!important;
 }
+.table {
+  td:last-child {
+    vertical-align: middle;
+    text-align: center;
+  }
+}

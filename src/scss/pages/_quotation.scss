@@ -1,0 +1,19 @@
+.quotation {
+  &__title {
+    font-size: rem(24);
+    margin-bottom: 26px;
+    color: $color-dark;
+    font-family: $font-bold;
+  }
+
+  &__table {
+    // min-width: 990px;
+    // overflow-x: auto;
+    @include media-breakpoint-down(sm) {
+      td,
+      th {
+        white-space: nowrap;
+      }
+    }
+  }
+}
