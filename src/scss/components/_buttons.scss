@@ -3,7 +3,7 @@
   cursor: pointer;
   font-size: rem(12);
   letter-spacing: 1px;
-
+  padding: 12px 60px;
 
   &:hover {
     color: $color-white;
@@ -22,6 +22,10 @@
   color: $color-white;
   padding: 12px 60px;
   line-height: 1.71;
+
+  &:hover {
+    background-color: #d48e41;
+  }
 }
 
 .utl-btn-secondary {

@@ -130,6 +130,14 @@
   text-align: center;
 }
 
+.modal-title {
+  font-size: rem(24);
+  font-family: $font-regular;
+}
+
+.modal-footer {
+  justify-content: flex-start;
+}
 .modal__button {
   height: 48px;
 }
