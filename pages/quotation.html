@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/css/animate.min.css" />
     <link rel="stylesheet" href="../assets/css/swiper.min.css" />
     <link rel="stylesheet" href="../assets/css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="../assets/css/select2.min.css" />
     <link rel="stylesheet" href="../assets/css/style-ltr.min.css" />
     <title>E-Zone - Quotation</title>
   </head>
@@ -300,7 +301,7 @@
                     id="service"
                     class="form-control form-input form-select"
                   >
-                    <option value="0">Service1</option>
+                    <option value="0">Choice Type</option>
                     <option value="0">Service1</option>
                     <option value="0">Service1</option>
                     <option value="0">Service1</option>
@@ -312,7 +313,10 @@
                   <select
                     name="service"
                     id="service"
-                    class="form-control form-input form-select"
+                    class="multiSelect form-control form-input form-select"
+                    multiple="multiple"
+                    data-select2-id="service2"
+
                   >
                     <option value="0">Service1</option>
                     <option value="0">Service1</option>
@@ -783,6 +787,7 @@
     <script src="../assets/js/popper.min.js"></script>
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="/../assets/js/wow.min.js"></script>
+    <script src="../assets/js/select2.min.js"></script>
     <script src="../assets/js/app.js"></script>
   </body>
 </html>

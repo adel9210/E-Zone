@@ -99,7 +99,7 @@
 
   &::before {
     content: "";
-    margin-right: 10px;
+    margin-inline-end: 10px;
     @include addIcon($icon-calender, 12px);
   }
 }
@@ -146,4 +146,18 @@
   color: #ff5230;
   font-size: rem(14);
   margin-top: 5px;
+}
+
+.icon-arrow-forward-24-px-1 {
+  @if $direction == rtl {
+    position: absolute;
+    transform: rotate(180deg);
+    margin-top: 3px;
+  }
+
+}
+.text-right {
+  @if $direction == rtl {
+    text-align: left!important;
+  }
 }

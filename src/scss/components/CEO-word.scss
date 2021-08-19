@@ -8,7 +8,7 @@
     &__image {
         width: 208px;
         height: 208px;
-        margin-right: 28px;
+        margin-inline-end: 28px;
     }
 
     &__info {
@@ -32,7 +32,7 @@
 
         }
         &__button {
-            text-align: right;
+            text-align: #{$right};
             margin-top: 25px;
         }
     }

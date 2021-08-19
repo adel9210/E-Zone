@@ -67,3 +67,28 @@
     color: #CFCFCF;
   }
 }
+
+
+// select2
+.select2-container--default .select2-selection--multiple {
+  min-height: 48px!important;
+  background-color: whitesmoke;
+  border-color: #e2e2e2;
+}
+
+
+
+ul.select2-selection__rendered::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-top: 5px solid #333;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+}
+
+.select2-container .select2-search--inline .select2-search__field {
+  margin-top: 13px;
+}

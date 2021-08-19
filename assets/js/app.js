@@ -1,6 +1,4 @@
 jQuery(document).ready(function ($) {
-
-
   const courses__swiper = new Swiper(".courses__swiper", {
     slidesPerView: 3,
     spaceBetween: 10,
@@ -139,9 +137,17 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  $('#ServiceItem').on('click', function(){
-    $('#serviceSubMenu').fadeToggle()
-  })
+  $("#ServiceItem").on("click", function () {
+    $("#serviceSubMenu").fadeToggle();
+  });
+
+  // select2
+  // $('.multiSelect').select2();
+  $(".multiSelect").select2({
+    placeholder: "Select a service",
+    search: true,
+    height: '50px'
+  });
 
   // REMOVE SPINNER
   setTimeout(() => {
