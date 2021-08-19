@@ -31,11 +31,18 @@
     margin: 0 auto;
   }
 
+  .video {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   &__icon {
     position: relative;
     z-index: 9999;
     margin-top: 75px;
     .icon {
+      font-size: rem(25);
       color: $primary-color;
     }
   }

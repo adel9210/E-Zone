@@ -5,8 +5,8 @@ jQuery(document).ready(function ($) {
     observer: true,
     observeParents: true,
     navigation: {
-      nextEl: ".courses__cards .swiper-button-next",
-      prevEl: ".courses__cards .swiper-button-prev",
+      nextEl: ".courses__swiper__controls .swiper-button-next",
+      prevEl: ".courses__swiper__controls .swiper-button-prev",
     },
 
     breakpoints: {
@@ -144,6 +144,7 @@ jQuery(document).ready(function ($) {
     watchSlidesVisibility: true,
     watchSlidesProgress: true,
   });
+
   var swiper2 = new Swiper(".mySwiper2", {
     spaceBetween: 10,
     navigation: {
@@ -165,9 +166,12 @@ jQuery(document).ready(function ($) {
     $(".multiSelect").select2({
       placeholder: "Select a service",
       search: true,
-      height: '50px'
+      height: "50px",
     });
   }
+
+  // count up
+  countUp();
 
   // REMOVE SPINNER
   setTimeout(() => {
@@ -332,5 +336,34 @@ function mobileNavMenuRender() {
 
   closeMenuBtn.addEventListener("click", function () {
     $(".header__mobile").fadeOut("slow");
+  });
+}
+
+function countUp() {
+  // These are the options that I'm going to be using on each statistic
+  var options = {
+    useEasing: true,
+    useGrouping: true,
+    separator: ",",
+    decimal: ".",
+  };
+
+  // Find all Statistics on page, put them inside a variable
+  var statistics = $(".company__statistics__item__count");
+
+  // For each Statistic we find, animate it
+  statistics.each(function (index) {
+    // Find the value we want to animate (what lives inside the p tags)
+    var value = $(statistics[index]).html();
+    // Start animating
+    var statisticAnimation = new CountUp(
+      statistics[index],
+      0,
+      value,
+      0,
+      5,
+      options
+    );
+    statisticAnimation.start();
   });
 }

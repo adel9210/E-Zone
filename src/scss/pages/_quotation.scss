@@ -6,9 +6,24 @@
     font-family: $font-bold;
   }
 
+  .icon-info {
+    margin-inline-end: 10px;
+  }
+  
   &__table {
     // min-width: 990px;
     // overflow-x: auto;
+    .icon-delete {
+      color: red;
+      transition: all .5s ease-out;
+      font-size: rem(18);
+      display: block;
+
+      &:hover{
+        transform: translateY(-5px);
+      }
+    }
+
     @include media-breakpoint-down(sm) {
       td,
       th {

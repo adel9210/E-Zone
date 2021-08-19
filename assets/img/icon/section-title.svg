@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>rhombus (2)</title>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.0_Home" transform="translate(-210.000000, -1010.000000)" fill="#4187D4" fill-rule="nonzero">
+            <g id="rhombus-(2)" transform="translate(210.000000, 1010.000000)">
+                <path d="M16,8 L8,0 L0,8 L8,16 L16,8 Z M8,5.34919184 L10.6507755,8 L8,10.6507755 L5.34922449,8 L8,5.34919184 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -100,7 +100,8 @@
   &::before {
     content: "";
     margin-inline-end: 10px;
-    @include addIcon($icon-calender, 12px);
+    @include addIcon($icon-section-title, 18px);
+    color: $primary-color;
   }
 }
 
