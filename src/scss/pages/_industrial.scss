@@ -1,0 +1,37 @@
+.industrial-details {
+  &__tabs {
+    .utl-tabs__items {
+      flex-direction: column;
+      border: 0;
+      margin-top: 0;
+    }
+
+    .utl-tabs__item {
+      margin-inline-end: 0;
+
+      &__link {
+        padding: 15px 10px;
+        background-color: #f5f5f5;
+        transition: all 0.3s;
+        border-bottom: 1px solid #c1c7d0 !important;
+        display: block;
+
+        &:hover,
+        &:focus,
+        &:visited,
+        &:active,
+        &:focus-visible {
+          border: 0 !important;
+          color: $color-white;
+          background-color: $primary-color;
+          color: $color-white;
+        }
+
+        &.active {
+            background-color: $primary-color;
+            color: $color-white;
+          }
+      }
+    }
+  }
+}
