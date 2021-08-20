@@ -178,35 +178,6 @@ jQuery(document).ready(function ($) {
     $(".loader").fadeOut("slow");
   }, 1000);
 
-  // SEARCH FUNCTIONALITY
-  $("#openSearchBtn").on("click", () => {
-    $(".header__nav__search__form").addClass(
-      "header__nav__search__form--active"
-    );
-    // $('body').addClass('backdrop');
-  });
-
-  $(document).on("click", function (event) {
-    const ignore = [
-      ".header__nav__search",
-      "#openSearchBtn",
-      "#openSearchBtnWithMobile",
-    ];
-
-    if ($(event.target).closest(ignore.join(",")).length === 0) {
-      $(".header__nav__search").hide();
-      $("body").removeClass("backdrop");
-    }
-  });
-
-  $("#openSearchBtnWithMobile").on("click", (event) => {
-    topFunction();
-    event.preventDefault();
-    $("#searchMobile")
-      .toggleClass("mt-3")
-      .toggleClass("h-auto")
-      .toggleClass("w-100");
-  });
 
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");
@@ -218,35 +189,6 @@ jQuery(document).ready(function ($) {
 
   mobileNavMenuRender();
 
-  let isAdvancedSearchOpened = false;
-  $("#advancedSearch").on("click", (e) => {
-    e.preventDefault();
-    isAdvancedSearchOpened = !isAdvancedSearchOpened;
-
-    if (isAdvancedSearchOpened) {
-      e.target.innerHTML = "- بحث عادي";
-      $("#advancedSearchContainer").fadeIn("slow");
-    } else {
-      e.target.innerHTML = "+ بحث متقدم";
-      $("#advancedSearchContainer").fadeOut("slow");
-    }
-  });
-
-  /***********************************/
-  $("#FAQAccordion").collapse({
-    toggle: false,
-  });
-
-  $("#FAQAccordion").on("hidden.bs.collapse", function (event) {
-    console.log(event);
-  });
-
-  $(".show-password").on("click", function () {
-    const input = $(this).siblings(".form-control");
-    const attr = $(input).attr("type");
-    $(input).attr("type", attr === "password" ? "text" : "password");
-    $(this).toggleClass("utl-color-primary");
-  });
 
   // WOW JS
   wow = new WOW({
