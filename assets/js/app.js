@@ -34,8 +34,8 @@ jQuery(document).ready(function ($) {
   });
 
   const clients__swiper = new Swiper(".clients__swiper", {
-    slidesPerView: 4,
-    spaceBetween: 10,
+    slidesPerView: 1,
+    spaceBetween: 0,
     observer: true,
     observeParents: true,
     navigation: {
@@ -51,22 +51,22 @@ jQuery(document).ready(function ($) {
       // when window width is >= 320px
       320: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
       // when window width is >= 480px
       480: {
         slidesPerView: 1,
-        spaceBetween: 20,
+        spaceBetween: 0,
       },
       // when window width is >= 768px
       768: {
-        slidesPerView: 2,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
       // when window width is >= 991px
       991: {
-        slidesPerView: 4,
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 0,
       },
     },
   });

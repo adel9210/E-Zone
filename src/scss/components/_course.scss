@@ -34,6 +34,15 @@
       }
     }
   }
+
+  &__inspection {
+    &__item {
+      &:not(:last-of-type){
+        border-bottom: 1px solid #c1c7d0;
+        padding-bottom: 36px;
+      }
+    }
+  }
 }
 
 .course-details {
