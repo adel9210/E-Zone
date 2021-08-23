@@ -1,4 +1,11 @@
 .industrial-details {
+  &__banner {
+    background-color: $color-dark;
+    color: $color-white;
+    font-weight: 900;
+    padding: 20px;
+    font-size: rem(16);
+  }
   &__tabs {
     .utl-tabs__items {
       flex-direction: column;

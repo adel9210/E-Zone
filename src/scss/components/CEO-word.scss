@@ -1,7 +1,21 @@
+%section-bg {
+    content: "";
+    background-image: url(../img/section-bg.png);
+    width: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: .3;
+}
+
 .CEO-word {
     padding: 35px 80px;
     background-color: $color-white;
     display: flex;
+    position: relative;
     // position: relative;
     // top: -100px;
     
@@ -48,5 +62,9 @@
         &__info__author{
             font-size: rem(22);
         }
+      }
+
+      &::after {
+        @extend %section-bg;
       }
 }

@@ -4,7 +4,7 @@
     // background-color: #F4F8F6;
     justify-content: center;
     margin-bottom: 30px;
-    margin-top: 40px;
+    margin-top: 0;
   }
 
   &__item {
@@ -37,4 +37,13 @@
       object-fit: cover;
     }
   }
+}
+
+.tab-pane.active {
+  animation: slide-down 1s ease-out;
+}
+
+@keyframes slide-down {
+  0% { opacity: 0; transform: translateY(100%); }
+  100% { opacity: 1; transform: translateY(0); }
 }

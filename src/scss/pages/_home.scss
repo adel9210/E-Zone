@@ -78,6 +78,7 @@
 .company {
   background-color: #02133c;
   padding: 100px 0;
+  position: relative;
 
   &__slogan {
     color: #d5d5d5;
@@ -127,11 +128,16 @@
   @include media-breakpoint-down(sm) {
     padding: 40px 0;
   }
+
+  &::after {
+    @extend %section-bg;
+  }
 }
 
 .client {
   background-color: #02133c;
   padding: 100px 0;
+  position: relative;
 
   &__title,
   &__slogan {
@@ -181,6 +187,10 @@
       }
     }
   }
+  
+  &::after {
+    @extend %section-bg;
+  }
 }
 
 .testimonials {
@@ -223,8 +233,9 @@
 
 .inquiry {
   padding: 130px 0;
+  padding-bottom: 200px;
   background-color: #02133c;
-
+  position: relative;
   &__wrapper {
     align-items: center;
   }
@@ -247,8 +258,11 @@
   &__label {
     font-size: rem(30);
     color: #fff;
-    margin-bottom: 46px;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
     line-height: 1.2;
+    font-weight: 900;
   }
 
   &__count {
@@ -257,6 +271,8 @@
     font-weight: bold;
     font-family: $font-bold;
     margin-bottom: 46px;
+    line-height: .7;
+
   }
 
   &__value {
@@ -272,11 +288,17 @@
       margin-bottom: 40px;
     }
   }
+
+  &::after {
+    @extend %section-bg;
+  }
 }
 
 .news-letter {
   padding: 60px;
   background-color: #d48e41;
+  position: relative;
+  top: -100px;
 
   .section-title {
     color: $color-white;
@@ -298,6 +320,8 @@
   }
 
   @include media-breakpoint-down(sm) {
+    top: 0;
+    margin-top: 20px;
     & {
       padding: 20px;
 

@@ -45,7 +45,28 @@
     margin: 20px 0;
   }
 
-  @include media-breakpoint-down(md){
+  @include media-breakpoint-down(md) {
     width: 90%;
-   }
+  }
+}
+
+.verification-modal .modal-body {
+  position: relative;
+  &::after {
+    @extend %section-bg;
+  }
+}
+
+.confirmation .modal-footer {
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.confirmation .modal-body {
+  padding: 20px;
+}
+
+.confirmation .modal-title {
+  font-size: rem(16);
+  color: red;
 }
