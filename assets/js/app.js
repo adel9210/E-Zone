@@ -157,7 +157,7 @@ jQuery(document).ready(function ($) {
   });
 
   $("#ServiceItem").on("click", function () {
-    $("#serviceSubMenu").fadeIn();
+    $("#serviceSubMenu").fadeToggle();
   });
 
   const $menuLink = $('#ServiceItem');

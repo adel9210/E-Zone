@@ -26,6 +26,8 @@
       color: #02133c;
       font-size: rem(16);
       display: block;
+      display: flex;
+      align-items: center;
 
       &__icon {
         margin-inline-end: 5px;

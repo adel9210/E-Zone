@@ -82,6 +82,9 @@
     padding: 20px;
     color: $color-white;
     background-color: $primary-color;
+    position: relative;
+    z-index: 99999;
+
     .utl-tabs {
       &__items {
         margin-top: 0;
@@ -94,7 +97,7 @@
           font-family: $font-regular;
 
           &.active {
-          font-family: $font-bold;
+            font-family: $font-bold;
             color: $color-white;
             border-color: $color-white;
           }
@@ -105,12 +108,12 @@
     .tab-content {
       li {
         padding: 8px;
-        transition: all .3s ease-in-out;
+        transition: all 0.3s ease-in-out;
 
         &:hover {
           background-color: $color-white;
           color: $color-dark;
-        } 
+        }
       }
     }
   }
