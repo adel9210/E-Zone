@@ -39,7 +39,7 @@
     padding: 19px;
 
     &__logo {
-      width: 92;
+      width: 120px;
     }
 
     &__items {
@@ -146,6 +146,15 @@
         margin-bottom: 56px;
       }
     }
+  }
+
+  &__content {
+    position: absolute;
+    width: 100%;
+    margin: 0 auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__mobile {

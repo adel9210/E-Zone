@@ -45,6 +45,9 @@ $card-border-color: transparent;
 // modal
 // $modal-inner-padding: 4rem!default;
 $modal-backdrop-bg: rgba(0,0,0,.9)!default;
+$modal-md: 600px;
+$modal-inner-padding: 60px 75px;
+$modal-content-border-radius: 0;
 .modal-open {
   height: 100vh;
 }

@@ -157,7 +157,20 @@ jQuery(document).ready(function ($) {
   });
 
   $("#ServiceItem").on("click", function () {
-    $("#serviceSubMenu").fadeToggle();
+    $("#serviceSubMenu").fadeIn();
+  });
+
+  const $menuLink = $('#ServiceItem');
+  const $menu = $('#serviceSubMenu');
+
+  // $(document).on('mouseenter', '#serviceSubMenu', '#ServiceItem', (e => {
+  //   $("#serviceSubMenu").fadeOut();
+    
+  // }))
+
+  // active tabs dynamic
+  $('.header .utl-tabs li  a').on('mouseover', function() {
+    $(this).tab('show');
   });
 
   // select2
@@ -178,7 +191,6 @@ jQuery(document).ready(function ($) {
     $(".loader").fadeOut("slow");
   }, 1000);
 
-
   const topButton = document.getElementById("gotToTopButton");
   const headerNav = document.querySelector(".header__mobile-nav");
   topButton.addEventListener("click", topFunction);
@@ -188,7 +200,6 @@ jQuery(document).ready(function ($) {
   };
 
   mobileNavMenuRender();
-
 
   // WOW JS
   wow = new WOW({
