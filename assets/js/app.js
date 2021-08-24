@@ -156,21 +156,30 @@ jQuery(document).ready(function ($) {
     },
   });
 
-  $("#ServiceItem").on("click", function () {
-    $("#serviceSubMenu").fadeToggle();
+  $("#ServiceItemWrapper").on("mouseover", function (event) {
+    event.stopPropagation();
+    event.preventDefault();
+
+    $("#serviceSubMenu").fadeIn();
   });
 
-  const $menuLink = $('#ServiceItem');
-  const $menu = $('#serviceSubMenu');
+  $("#serviceSubMenu").on("mouseleave", function (event) {
+    event.stopPropagation();
+    event.preventDefault();
+    $("#serviceSubMenu").fadeOut();
+  });
+
+  const $menuLink = $("#ServiceItem");
+  const $menu = $("#serviceSubMenu");
 
   // $(document).on('mouseenter', '#serviceSubMenu', '#ServiceItem', (e => {
   //   $("#serviceSubMenu").fadeOut();
-    
+
   // }))
 
   // active tabs dynamic
-  $('.header .utl-tabs li  a').on('mouseover', function() {
-    $(this).tab('show');
+  $(".header .utl-tabs li  a").on("mouseover", function () {
+    $(this).tab("show");
   });
 
   // select2
