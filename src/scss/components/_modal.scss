@@ -52,8 +52,21 @@
 
 .verification-modal .modal-body {
   position: relative;
+  z-index: 9999;
+
+  & > * {
+    @extend %section-top-layer;
+  }
+
   &::after {
     @extend %section-bg;
+    background-image: url(../img/section-bg-1.png)!important;
+    width: 200px!important;
+    height: 200px;
+    left: -50px!important;
+    top: 50px!important;
+    right: unset!important;
+    bottom: unset!important;
   }
 }
 

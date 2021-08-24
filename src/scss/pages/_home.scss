@@ -79,7 +79,9 @@
   background-color: #02133c;
   padding: 100px 0;
   position: relative;
-
+  & > * {
+    @extend %section-top-layer;
+  }
   &__slogan {
     color: #d5d5d5;
   }
@@ -139,6 +141,10 @@
   padding: 100px 0;
   position: relative;
 
+  & > * {
+    @extend %section-top-layer;
+  }
+
   &__title,
   &__slogan {
     color: $color-white;
@@ -187,7 +193,7 @@
       }
     }
   }
-  
+
   &::after {
     @extend %section-bg;
   }
@@ -236,6 +242,11 @@
   padding-bottom: 200px;
   background-color: #02133c;
   position: relative;
+
+  & > * {
+    @extend %section-top-layer;
+  }
+
   &__wrapper {
     align-items: center;
     position: relative;
@@ -273,8 +284,7 @@
     font-weight: bold;
     font-family: $font-bold;
     margin-bottom: 46px;
-    line-height: .7;
-
+    line-height: 0.7;
   }
 
   &__value {
