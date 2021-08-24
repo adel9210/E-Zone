@@ -10,7 +10,7 @@
   }
 
   .icon {
-    margin-inline-start: 20px;
+    margin: 0 20px;
     &::before {
       color: $color-white;
     }
@@ -42,7 +42,6 @@
   color: #02133c;
   font-family: $font-regular;
 
-
   &:hover {
     background-color: $primary-color;
     color: $color-white;
@@ -63,7 +62,7 @@
     background-color: $primary-color;
     color: $color-white;
   }
-  
+
   .icon {
     margin-inline-start: 20px;
     &::before {
@@ -76,7 +75,6 @@
   background-color: $color-white;
   border: 1px solid $color-white;
 }
-
 
 .btn-green {
   background-color: #36b37e;
