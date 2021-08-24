@@ -238,6 +238,8 @@
   position: relative;
   &__wrapper {
     align-items: center;
+    position: relative;
+    z-index: 9999;
   }
 
   &__title {
