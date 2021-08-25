@@ -3,6 +3,7 @@
   background-size: cover;
   height: 100vh;
   position: relative;
+  background-position: center;
 
   &__top-nav {
     color: $color-white;
@@ -39,7 +40,7 @@
     padding: 19px;
 
     &__logo {
-      width: 120px;
+      width: 150px;
     }
 
     &__items {
@@ -122,7 +123,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 70px;
+    // margin-top: 70px;
 
     &__item {
       &__features {

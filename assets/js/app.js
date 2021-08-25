@@ -189,6 +189,7 @@ jQuery(document).ready(function ($) {
       placeholder: "Select a service",
       search: true,
       height: "50px",
+      closeOnSelect: false
     });
   }
 
