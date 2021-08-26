@@ -1,7 +1,7 @@
 .header {
   background-image: url(../img/hero.png);
   background-size: cover;
-  height: 100vh;
+  height: 80vh;
   position: relative;
   background-position: center;
 
@@ -257,6 +257,7 @@
   }
 
   @include media-breakpoint-down(md) {
+    height: 100vh;
     &__main {
       flex-direction: column;
       width: 100%;

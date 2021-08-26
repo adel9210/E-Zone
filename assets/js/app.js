@@ -189,12 +189,9 @@ jQuery(document).ready(function ($) {
       placeholder: "Select a service",
       search: true,
       height: "50px",
-      closeOnSelect: false
+      closeOnSelect: false,
     });
   }
-
-  // count up
-  countUp();
 
   // REMOVE SPINNER
   setTimeout(() => {
@@ -218,6 +215,7 @@ jQuery(document).ready(function ($) {
     offset: 0, // default
     mobile: true, // default
     live: true, // default
+    callback: wowCallback,
   });
   wow.init();
 });
@@ -300,6 +298,16 @@ function mobileNavMenuRender() {
   closeMenuBtn.addEventListener("click", function () {
     $(".header__mobile").fadeOut("slow");
   });
+}
+
+var isCounted= false;
+function wowCallback(event) {
+  // var trigger$ = $('.counterElement')
+  if ($(event).hasClass("counterElement") && !isCounted) {
+    // count up
+    countUp();
+    isCounted = true
+  }
 }
 
 function countUp() {
