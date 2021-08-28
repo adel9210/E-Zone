@@ -1,5 +1,6 @@
 .header {
-  background-image: url(../img/hero.png);
+  background: $primary-color;
+  background: linear-gradient(rgba(2, 7, 68, 0.8), rgba(11, 6, 73, 0.8)), url(../img/hero.jpg);
   background-size: cover;
   height: 80vh;
   position: relative;
@@ -51,6 +52,7 @@
     }
 
     &__item {
+      border: 0 !important;
       &:not(:last-child) {
         margin-#{$right}: 25px;
       }
@@ -58,6 +60,8 @@
       &__link {
         font-family: $font-bold;
         font-size: rem(15);
+        border: 0 !important;
+
 
         &:hover {
           color: $primary-color;
@@ -240,6 +244,13 @@
       margin-#{$right}: 15px;
     }
 
+    &__top {
+      padding: 0 20px;
+      padding-bottom: 20px;
+      margin-bottom: 15px;
+      border-bottom: 1px solid $color-light;
+    }
+
     #searchMobile {
       width: 0;
       height: 0;
@@ -269,12 +280,27 @@
     }
   }
 
+  @media screen and (max-height: 768px) {
+    height: 100vh;
+  }
+
   &:not(.home) {
     height: 450px;
+    background-image: none;
+    background-color: $color-dark;
     @include media-breakpoint-down(lg) {
       height: 200px;
       padding-top: 20px;
     }
+
+    &::after {
+      @extend %section-bg;
+      top: unset;
+      height: 100%;
+      width: 20%;
+      bottom: 0;
+    }
+    
   }
 }
 

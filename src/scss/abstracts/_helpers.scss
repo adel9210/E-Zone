@@ -128,6 +128,7 @@
   background-color: #fff;
   position: relative;
   top: -100px;
+  z-index: 99;
 
   @include media-breakpoint-down(lg){
     top: 0;

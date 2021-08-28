@@ -68,8 +68,25 @@
     right: unset!important;
     bottom: unset!important;
   }
+
+  @include media-breakpoint-down(sm){
+    padding: 20px;
+  }
 }
 
+.verification-modal {
+  &__form {
+    @include media-breakpoint-down(sm){
+      flex-direction: column;
+      .modal__button {
+        width: 50%;
+        margin: 0 auto;
+        display: block;
+        margin-top: 10px;
+      }
+    }
+  }
+}
 .confirmation .modal-footer {
   padding-top: 10px;
   margin-top: 10px;

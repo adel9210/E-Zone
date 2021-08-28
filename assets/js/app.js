@@ -239,13 +239,18 @@ function changeEventContainerPosition() {
 }
 
 function scrollFunction(topButton, headerNav) {
+  const topNav = $(".header__mobile-nav__top");
+
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "flex";
+    topNav.fadeOut();
     if (headerNav) {
       headerNav.style.top = "0px";
     }
   } else {
     topButton.style.display = "none";
+    topNav.fadeIn();
+
     // headerNav.style.top = '60px';
   }
 
@@ -267,11 +272,14 @@ function topFunction() {
 
 function mobileNavMenuRender() {
   const navExpand = [].slice.call(document.querySelectorAll(".nav-expand"));
-  const backLink = `<li class="nav-item">
-	<a class="nav-link nav-back-link" href="javascript:;">
-		Back
-	</a>
-</li>`;
+  const backLink = `<li class="nav-item nav-item-buttons">
+    <a class="nav-link nav-back-link" href="javascript:;">
+      Back
+    </a>
+    <a class="nav-link nav-close-link subMenuClose" href="javascript:;">
+      X
+    </a>
+  </li>`;
 
   navExpand.forEach((item) => {
     item
@@ -290,6 +298,7 @@ function mobileNavMenuRender() {
 
   const openMenuBtn = document.getElementById("openMenu");
   const closeMenuBtn = document.getElementById("closeMenu");
+  const subMenuCloseMenuBtn = $(".subMenuClose");
 
   openMenuBtn.addEventListener("click", function () {
     $(".header__mobile").fadeIn("slow");
@@ -298,15 +307,20 @@ function mobileNavMenuRender() {
   closeMenuBtn.addEventListener("click", function () {
     $(".header__mobile").fadeOut("slow");
   });
+
+  subMenuCloseMenuBtn.on("click", function () {
+    $(".header__mobile").fadeOut("slow");
+    $('.nav-expand').removeClass('active')
+  });
 }
 
-var isCounted= false;
+var isCounted = false;
 function wowCallback(event) {
   // var trigger$ = $('.counterElement')
   if ($(event).hasClass("counterElement") && !isCounted) {
     // count up
     countUp();
-    isCounted = true
+    isCounted = true;
   }
 }
 

@@ -3,14 +3,14 @@
   cursor: pointer;
   font-size: rem(12);
   letter-spacing: 1px;
-  padding: 12px 60px;
+  padding: 12px 20px;
 
   &:hover {
     color: $color-white;
   }
 
   .icon {
-    margin: 0 20px;
+    margin: 0 10px;
     &::before {
       color: $color-white;
     }
@@ -20,7 +20,7 @@
 .utl-btn-primary {
   background: $primary-color;
   color: $color-white;
-  padding: 12px 60px;
+  // padding: 12px 60px;
   line-height: 1.71;
 
   &:hover {

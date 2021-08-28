@@ -39,7 +39,7 @@ $link-color: $primary-color;
     top: 20px;
     #{$right}: 20px;
     font-size: 30px;
-    color: $color-white;
+    color: $color-blue;
   }
 }
 .nav-is-toggled {
@@ -58,7 +58,7 @@ $link-color: $primary-color;
 $nav-width: 100%;
 $nav-padding: 0.875em 1em;
 $nav-border-color: $color-light-grey;
-$nav-background-color: $primary-color-tint-4;
+$nav-background-color: $color-white;
 $nav-icon-font: "icomoon";
 $nav-icon-arrow-right: $icon-right-arrow;
 $nav-icon-arrow-left: $icon-left-arrow;
@@ -71,128 +71,139 @@ $nav-level4-background-color: $primary-color-tint-3;
 $nav-level5-background-color: $primary-color-tint-2;
 
 .header__mobile {
-    .nav {
-      &-drill {
+  .nav {
+    &-drill {
+      display: flex;
+      position: fixed;
+      z-index: 100;
+      top: 0;
+      #{$left}: 0;
+      width: $nav-width;
+      height: 100vh;
+      background-color: $nav-background-color;
+      overflow-y: auto;
+      overflow-x: hidden;
+      -webkit-overflow-scrolling: touch;
+      transition: 0.45s;
+    }
+
+    &-items {
+      flex: 0 0 100%;
+    }
+
+    &-item {
+      &:not(:last-child) {
+        border-bottom: solid 1px $nav-border-color;
+      }
+
+      &-buttons {
         display: flex;
-        position: fixed;
-        z-index: 100;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $primary-color;
+
+        a {
+          background-color: $primary-color!important;
+          color: $color-white
+          ;
+        }
+      }
+    }
+
+    &-link {
+      display: block;
+      padding: $nav-padding;
+      background-color: $nav-background-color;
+      color: $primary-color;
+      font-size: 1.3rem;
+      line-height: 1.5em;
+      font-weight: 300;
+    }
+
+    &-expand {
+      &-content {
+        position: absolute;
         top: 0;
-        #{$left}: 0;
-        width: $nav-width;
-        height: 100vh;
-        background-color: $nav-background-color;
-        overflow-y: auto;
-        overflow-x: hidden;
-        -webkit-overflow-scrolling: touch;
-        transition: 0.45s;
-      }
-    
-      &-items {
-        flex: 0 0 100%;
-      }
-    
-      &-item {
-        &:not(:last-child) {
-          border-bottom: solid 1px $nav-border-color;
+        #{$right}: 0;
+        width: 100%;
+        height: 100%;
+        transform: translateX(100%);
+        background-color: $nav-level-background-color;
+        transition: 0.3s;
+        visibility: hidden;
+
+        .nav-item {
+          &:not(:last-child) {
+            border-bottom: solid 1px $nav-level-border-color;
+          }
         }
-      }
-    
-      &-link {
-        display: block;
-        padding: $nav-padding;
-        background-color: $nav-background-color;
-        color: $primary-color;
-        font-size: 1.3rem;
-        line-height: 1.5em;
-        font-weight: 300;
-      }
-    
-      &-expand {
-        &-content {
-          position: absolute;
-          top: 0;
-          #{$right}: 0;
-          width: 100%;
-          height: 100%;
-          transform: translateX(100%);
+
+        .nav-link {
           background-color: $nav-level-background-color;
-          transition: 0.3s;
-          visibility: hidden;
-    
-          .nav-item {
-            &:not(:last-child) {
-              border-bottom: solid 1px $nav-level-border-color;
-            }
-          }
-    
-          .nav-link {
-            background-color: $nav-level-background-color;
-          }
-    
-          .nav-back-link {
-            display: flex;
-            align-items: center;
-            background-color: $primary-color !important;
-            color: $white;
-    
-            &::before {
-              @if $direction == rtl {
-                @include addIcon($nav-icon-arrow-right, 15px);
-                
-              }@else {
-                @include addIcon($nav-icon-arrow-left, 15px);
-              }
-              margin-#{$right}: 0.5em;
-            }
-          }
         }
-    
-        &-link {
+
+        .nav-back-link {
           display: flex;
-          justify-content: space-between;
-          
-          &::after {
+          align-items: center;
+          background-color: $primary-color !important;
+          color: $white;
+
+          &::before {
             @if $direction == rtl {
-              @include addIcon($nav-icon-arrow-left, 15px);
-              
-            }@else {
               @include addIcon($nav-icon-arrow-right, 15px);
+            } @else {
+              @include addIcon($nav-icon-arrow-left, 15px);
             }
+            margin-#{$right}: 0.5em;
           }
         }
-    
-        &.active {
-          > .nav-expand-content {
-            transform: translateX(0);
-            visibility: visible;
+      }
+
+      &-link {
+        display: flex;
+        justify-content: space-between;
+
+        &::after {
+          @if $direction == rtl {
+            @include addIcon($nav-icon-arrow-left, 15px);
+          } @else {
+            @include addIcon($nav-icon-arrow-right, 15px);
           }
         }
-    
-        // quick example for other level colours
-        .nav-expand-content {
+      }
+
+      &.active {
+        > .nav-expand-content {
+          transform: translateX(0);
+          visibility: visible;
+        }
+      }
+
+      // quick example for other level colours
+      .nav-expand-content {
+        background-color: $nav-level-background-color;
+        .nav-link {
           background-color: $nav-level-background-color;
+        }
+        .nav-expand-content {
+          background-color: $nav-level3-background-color;
           .nav-link {
-            background-color: $nav-level-background-color;
+            background-color: $nav-level3-background-color;
           }
           .nav-expand-content {
-            background-color: $nav-level3-background-color;
+            background-color: $nav-level4-background-color;
             .nav-link {
-              background-color: $nav-level3-background-color;
+              background-color: $nav-level4-background-color;
             }
             .nav-expand-content {
-              background-color: $nav-level4-background-color;
+              background-color: $nav-level5-background-color;
               .nav-link {
-                background-color: $nav-level4-background-color;
-              }
-              .nav-expand-content {
                 background-color: $nav-level5-background-color;
-                .nav-link {
-                  background-color: $nav-level5-background-color;
-                }
               }
             }
           }
         }
       }
     }
+  }
 }

@@ -10,4 +10,14 @@
 		color: $color-dark;
 		line-height: 24px;
 	}
+
+	img {
+		max-height: 250px;
+	}
+  }
+
+  [data-fancybox]{
+	img {
+		max-height: 250px;
+	} 
   }
