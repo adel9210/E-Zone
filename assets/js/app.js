@@ -209,16 +209,18 @@ jQuery(document).ready(function ($) {
   mobileNavMenuRender();
 
   // WOW JS
-  wow = new WOW({
-    boxClass: "wow", // default
-    animateClass: "animated", // default
-    offset: 0, // default
-    mobile: true, // default
-    live: true, // default
-    callback: wowCallback,
-  });
-  wow.init();
-});
+  if (WOW) {
+    var wow = new WOW({
+      boxClass: "wow", // default
+      animateClass: "animated", // default
+      offset: 0, // default
+      mobile: true, // default
+      live: true, // default
+      callback: wowCallback,
+    });
+    wow.init();
+  }
+})
 
 function changeEventContainerPosition() {
   var element_position = $("#footer").offset() && $("#footer").offset().top;
