@@ -259,7 +259,9 @@ function scrollFunction(topButton, headerNav) {
   } else {
     topButton.style.display = "none";
     topNav.fadeIn();
-    header.addClass('nav__top--open');
+    if (window.innerWidth < 768) {
+      header.addClass("nav__top--open");
+    }
     // headerNav.style.top = '60px';
   }
 

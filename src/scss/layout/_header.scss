@@ -1,6 +1,7 @@
 .header {
   background: $primary-color;
-  background: linear-gradient(rgba(2, 7, 68, 0.8), rgba(11, 6, 73, 0.8)), url(../img/hero.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/hero.jpg);
   background-size: cover;
   height: 80vh;
   position: relative;
@@ -61,7 +62,6 @@
         font-family: $font-bold;
         font-size: rem(15);
         border: 0 !important;
-
 
         &:hover {
           color: $primary-color;
@@ -300,10 +300,9 @@
             margin-bottom: 25px;
           }
 
-
           &__features {
             &__item {
-            margin-bottom: 15px;
+              margin-bottom: 15px;
             }
             h3 {
               font-size: rem(18);
@@ -313,7 +312,6 @@
       }
     }
   }
-
 
   // @include media-breakpoint-down(sm){
   //   height: 100vh;
@@ -335,7 +333,6 @@
       width: 20%;
       bottom: 0;
     }
-    
   }
 
   &.nav__top--open {
