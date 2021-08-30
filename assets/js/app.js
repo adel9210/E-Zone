@@ -240,17 +240,19 @@ function changeEventContainerPosition() {
 
 function scrollFunction(topButton, headerNav) {
   const topNav = $(".header__mobile-nav__top");
+  const header = $(".header.home");
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "flex";
     topNav.fadeOut();
+    header.removeClass('nav__top--open');
     if (headerNav) {
       headerNav.style.top = "0px";
     }
   } else {
     topButton.style.display = "none";
     topNav.fadeIn();
-
+    header.addClass('nav__top--open');
     // headerNav.style.top = '60px';
   }
 

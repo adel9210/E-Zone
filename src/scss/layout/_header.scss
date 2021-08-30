@@ -257,6 +257,7 @@
       transition: all 1s ease-in-out;
     }
   }
+
   @include media-breakpoint-down(lg) {
     &__nav,
     &__top-nav {
@@ -284,6 +285,11 @@
     height: 100vh;
   }
 
+
+  // @include media-breakpoint-down(sm){
+  //   height: 100vh;
+  // }
+
   &:not(.home) {
     height: 450px;
     background-image: none;
@@ -301,6 +307,10 @@
       bottom: 0;
     }
     
+  }
+
+  &.nav__top--open {
+    height: 170vh;
   }
 }
 
