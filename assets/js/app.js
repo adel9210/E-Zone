@@ -209,7 +209,7 @@ jQuery(document).ready(function ($) {
   mobileNavMenuRender();
 
   // WOW JS
-  if (WOW) {
+  if (window.WOW) {
     var wow = new WOW({
       boxClass: "wow", // default
       animateClass: "animated", // default
