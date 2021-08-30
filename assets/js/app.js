@@ -239,7 +239,10 @@ function changeEventContainerPosition() {
 }
 
 const header = $(".header.home");
-header.addClass('nav__top--open');
+
+if (window.innerWidth < 768) {
+  header.addClass('nav__top--open');
+}
 
 function scrollFunction(topButton, headerNav) {
   const topNav = $(".header__mobile-nav__top");
