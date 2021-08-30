@@ -76,11 +76,12 @@
 
 .verification-modal {
   &__form {
+    display: flex;
     @include media-breakpoint-down(sm){
       flex-direction: column;
       .modal__button {
         width: 50%;
-        margin: 0 auto;
+        // margin: 0 auto;
         display: block;
         margin-top: 10px;
       }
