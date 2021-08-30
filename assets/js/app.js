@@ -238,9 +238,11 @@ function changeEventContainerPosition() {
   }
 }
 
+const header = $(".header.home");
+header.addClass('nav__top--open');
+
 function scrollFunction(topButton, headerNav) {
   const topNav = $(".header__mobile-nav__top");
-  const header = $(".header.home");
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "flex";
