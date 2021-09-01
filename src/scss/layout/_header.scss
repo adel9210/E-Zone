@@ -1,6 +1,6 @@
 .header {
   background: $primary-color;
-  background: linear-gradient(rgb(13 42 74), rgb(7 27 84 / 80%)),url(../img/hero.jpg);
+  background: linear-gradient(rgb(13 42 74), rgb(7 27 84 / 40%)),url(../img/hero-2.jpg);
   background-size: cover;
   height: 80vh;
   position: relative;
@@ -341,7 +341,8 @@
     background-image: none;
     background-color: $color-dark;
     @include media-breakpoint-down(lg) {
-      height: 200px;
+      min-height: 200px;
+      height: auto;
       padding-top: 40px;
     }
 
