@@ -12,6 +12,16 @@
   @media screen and (max-height: 600px) {
     margin-top: 0;
   }
+
+  .btn.utl-btn-outline {
+    &:hover {
+        .icon {
+            &::before {
+                color: #fff!important;
+            }
+        }
+    }
+}
 }
 
 .CEO-word {

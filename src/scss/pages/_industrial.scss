@@ -41,4 +41,13 @@
       }
     }
   }
+
+  &__wrapper {
+    @include media-breakpoint-down(sm){
+      flex-direction: column-reverse;
+      .industrial-details__tabs {
+        margin-top: 40px;
+      }
+    }
+  }
 }

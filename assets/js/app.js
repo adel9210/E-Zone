@@ -169,8 +169,10 @@ jQuery(document).ready(function ($) {
     $("#serviceSubMenu").fadeOut();
   });
 
-  const $menuLink = $("#ServiceItem");
-  const $menu = $("#serviceSubMenu");
+  // tabs click
+  $('.utl-tabs__item__link').on('click', function(){
+    window.scrollTo(0,0)
+  })
 
   // $(document).on('mouseenter', '#serviceSubMenu', '#ServiceItem', (e => {
   //   $("#serviceSubMenu").fadeOut();
@@ -243,7 +245,7 @@ function changeEventContainerPosition() {
 const header = $(".header.home");
 
 if (window.innerWidth < 768) {
-  header.addClass('nav__top--open');
+  // header.addClass('nav__top--open');
 }
 
 function scrollFunction(topButton, headerNav) {
@@ -251,16 +253,16 @@ function scrollFunction(topButton, headerNav) {
 
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     topButton.style.display = "flex";
-    topNav.fadeOut();
-    header.removeClass('nav__top--open');
+    // topNav.fadeOut();
+    // header.removeClass('nav__top--open');
     if (headerNav) {
       headerNav.style.top = "0px";
     }
   } else {
     topButton.style.display = "none";
-    topNav.fadeIn();
+    // topNav.fadeIn();
     if (window.innerWidth < 768) {
-      header.addClass("nav__top--open");
+      // header.addClass("nav__top--open");
     }
     // headerNav.style.top = '60px';
   }
@@ -310,6 +312,11 @@ function mobileNavMenuRender() {
   const openMenuBtn = document.getElementById("openMenu");
   const closeMenuBtn = document.getElementById("closeMenu");
   const subMenuCloseMenuBtn = $(".subMenuClose");
+  const verification_button = $("#verification_button");
+
+  verification_button.on('click', function(){
+    closeMenuBtn.click()
+  })
 
   openMenuBtn.addEventListener("click", function () {
     $(".header__mobile").fadeIn("slow");

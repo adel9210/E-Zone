@@ -104,21 +104,22 @@
 %truncate {
   display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
   overflow: hidden;
 }
 
 .utl-truncate {
   &-2 {
     @extend %truncate;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 2!important;
   }
   &-3 {
     @extend %truncate;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 3!important;
   }
   &-4 {
     @extend %truncate;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 4!important;
   }
 }
 
@@ -131,7 +132,7 @@
   z-index: 99;
 
   @include media-breakpoint-down(lg){
-    top: 0;
+    top: 0!important;
     padding: 20px;
   }
 }
