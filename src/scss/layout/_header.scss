@@ -1,10 +1,23 @@
 .header {
   background: $primary-color;
-  background: linear-gradient(rgb(13 42 74), rgb(7 27 84 / 40%)),url(../img/hero-2.jpg);
+  background: linear-gradient(rgb(13 42 74), rgb(7 27 84 / 40%)),
+    url(../img/hero-2.jpg);
   background-size: cover;
   height: 80vh;
   position: relative;
   background-position: center;
+
+  &--2 {
+    background: url(../img/hero-old.png);
+    background-size: cover;
+    background-position: right;
+  }
+
+  &--3 {
+    background: linear-gradient(rgb(13 42 74), rgb(7 27 84 / 40%)), url(../img/hero.jpg);
+    background-size: cover;
+    background-position: right;
+  }
 
   &__top-nav {
     color: $color-white;
@@ -61,7 +74,7 @@
         font-family: $font-bold;
         font-size: rem(15);
         border: 0 !important;
-        -webkit-appearance: none!important;
+        -webkit-appearance: none !important;
 
         &:hover {
           color: $primary-color;
@@ -164,7 +177,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 
-    @include media-breakpoint-down(sm){
+    @include media-breakpoint-down(sm) {
       top: 60%;
     }
   }
